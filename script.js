@@ -43,7 +43,7 @@ const play = () => {
 
     if (inputValue === randomNumber) {
       body.style.backgroundImage = backgroundWin;
-      message.textContent = `BRAVO !!! Le nombre était bien ${randomNumber}`;
+      message.textContent = `BRAVO !!! Le nombre était bien ${randomNumber}.`;
       replayBtn.style.display = "block";
       tryBtn.setAttribute("disabled", "");
     }
@@ -63,10 +63,10 @@ const play = () => {
         randomNumber > inputValue - 11
       ) {
         body.style.backgroundImage = backgroundLukewarm;
-        message.textContent = "C'est Tiède 😐 ";
+        message.textContent = "C'est Tiède. 😐 ";
       } else {
         body.style.backgroundImage = backgroundCold;
-        message.textContent = "C'est Froid ❄️ ";
+        message.textContent = "C'est Froid. ❄️ ";
       }
       // Réduction du nombre de vies
       lives--;
