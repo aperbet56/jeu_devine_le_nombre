@@ -6,7 +6,7 @@ Création d'un jeu de logique : devine le nombre. L'utilisation a trois chances 
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/jeu_devine_le_nombre/
 
 ## Développez avec
 
