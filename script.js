@@ -11,7 +11,7 @@ const body = document.getElementsByTagName("body")[0];
 const emptyHeart = '<ion-icon name="heart-outline"></ion-icon>';
 const fullHeart = '<ion-icon name="heart"></ion-icon>';
 
-// Fond
+// Fonds
 const backgroundCold =
   "linear-gradient(120deg, rgb(237, 243, 253) 0%, rgb(223, 245, 255) 100%)";
 const backgroundLukewarm =
@@ -108,6 +108,7 @@ const play = () => {
   //Appel de la fonction updateStatusHeart
   updateStatusHeart(lives);
 
+  // Ecoute de l'événement "click" sur le bouton rejouer
   replayBtn.addEventListener("click", () => {
     message.style.display = "none";
     document.location.reload(true);
