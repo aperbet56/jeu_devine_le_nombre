@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu : devine le nombre</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jeu : devine le nombre</h1>
+      <p>
+        Devine le nombre est un jeu de réflexion. Votre mission, si vous
+        l'acceptez : Trouvez le bon nombre entre 0 et 50. Vous avez 3 essais.
+        Bonne chance !
+      </p>
+    </header>
+    <main class="main__content">
+      <section class="container">
+        <div class="lives">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="heart"></ion-icon>
+        </div>
+
+        <form id="form__input">
+          <label for="number">Entrez un nombre :</label>
+          <input
+            type="number"
+            id="number"
+            min="0"
+            max="50"
+            required
+            placeholder="0"
+          />
+          <button type="submit" id="try__btn">Essayer</button>
+          <p id="message"></p>
+          <button id="replay__btn">Rejouer ?</button>
+        </form>
+        <p id="details">
+          * Brûlant = &plusmn; 2 ; Chaud = &plusmn; 5 ; Tiède = &plusmn; 10 ;
+          Froid = + de 10.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <span>Site créé par aperbet56</span>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
