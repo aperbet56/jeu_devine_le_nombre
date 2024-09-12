@@ -45,7 +45,7 @@ const play = () => {
       body.style.backgroundImage = backgroundWin;
       message.textContent = `BRAVO !!! Le nombre était bien ${randomNumber}.`;
       replayBtn.style.display = "block";
-      tryBtn.setAttribute("disabled", "");
+      tryBtn.style.display = "none";
     }
 
     if (inputValue !== randomNumber) {
@@ -83,7 +83,7 @@ const play = () => {
     if (lives === 0) {
       body.style.backgroundImage = backgroundLoose;
       body.style.color = "#ffffff";
-      tryBtn.setAttribute("disabled", "");
+      tryBtn.style.display = "none";
       message.textContent = `Vous avez perdu. La réponse était ${randomNumber}.`;
       replayBtn.style.display = "block";
     }
@@ -111,7 +111,8 @@ const play = () => {
   // Ecoute de l'événement "click" sur le bouton rejouer
   replayBtn.addEventListener("click", () => {
     message.style.display = "none";
-    document.location.reload(true);
+    input.value = "";
+    document.location.reload();
   });
 };
 // Appel de la fonction play()
